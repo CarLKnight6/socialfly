@@ -1,4 +1,4 @@
-package com.example.social_fly
+package com.dlogics.socialfly
 
 import io.flutter.embedding.android.FlutterActivity
 
