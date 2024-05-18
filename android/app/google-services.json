@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "18184940555",
+    "project_id": "socialfly-595b3",
+    "storage_bucket": "socialfly-595b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18184940555:android:ffd881f9955c4eaa4f2b0e",
+        "android_client_info": {
+          "package_name": "com.dlogics.socialfly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18184940555-vqapnggndim81pj32tnhmumf9nh9f9j0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHFeyCdtzTgXxFnny_X2eNjkL3omnMF8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18184940555-vqapnggndim81pj32tnhmumf9nh9f9j0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
