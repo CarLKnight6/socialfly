@@ -5,8 +5,8 @@ import 'package:social_fly/screens/splash.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  FirebaseMessaging.onBackgroundMessage(handleBackgroundMessage);
+  // await Firebase.initializeApp();
+  // FirebaseMessaging.onBackgroundMessage(handleBackgroundMessage);
   runApp(const SocialFly());
 }
 
@@ -17,6 +17,7 @@ class SocialFly extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );
   }
