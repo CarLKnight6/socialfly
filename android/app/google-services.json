@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "18184940555-3imqe4j2ugnn0vbq690i7a7tv2c78dam.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dlogics.socialfly",
+            "certificate_hash": "0e67ad4b4cbfb6718e8049fc3758b5980fc5de1c"
+          }
+        },
+        {
           "client_id": "18184940555-vqapnggndim81pj32tnhmumf9nh9f9j0.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,6 +37,13 @@
             {
               "client_id": "18184940555-vqapnggndim81pj32tnhmumf9nh9f9j0.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "18184940555-j1q1ah5gtbs24lc85449tjmtgl977c0m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dlogics.socialfly"
+              }
             }
           ]
         }
