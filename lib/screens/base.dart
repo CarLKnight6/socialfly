@@ -110,8 +110,6 @@ mixin Base<Page extends BaseScreen> on BasePageState<Page> {
 
 import 'package:flutter/material.dart';
 
-import 'package:home_automation/screens/base.dart';
-
 class <ClassName> extends BasePage {
 const <ClassName>({super.key});
 @override
