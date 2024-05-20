@@ -11,6 +11,7 @@ abstract class BaseScreen extends StatefulWidget {
 abstract class BasePageState<Page extends BaseScreen> extends State<Page> {
   bool _hasBackButton = false;
   bool _hasBottomNavBar = true;
+  Widget? _action;
 
   String? appBarTitle() {
     return null;
@@ -24,8 +25,8 @@ abstract class BasePageState<Page extends BaseScreen> extends State<Page> {
     _hasBottomNavBar = value;
   }
 
-  Widget? customAction() {
-    return null;
+  void customAction(Widget value) {
+    _action = value;
   }
 
   void hasBackButton(bool value) {
@@ -63,13 +64,13 @@ mixin Base<Page extends BaseScreen> on BasePageState<Page> {
           : AppBar(
               elevation: 0,
               automaticallyImplyLeading: false,
+              backgroundColor: Color(0xffebc591),
               title: customAppBarTitle() ??
                   Text(
                     appBarTitle() ?? '',
                     style: TextStyle(
-                      color: Colors.blueAccent,
+                      color: Colors.red,
                       fontSize: ScreenUtil.scaleFactor * 20,
-                      fontFamily: 'Raleway',
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -83,9 +84,10 @@ mixin Base<Page extends BaseScreen> on BasePageState<Page> {
                       ),
                     )
                   : null,
+              actions: [_action ?? const SizedBox()],
             ),
       body: Container(
-        decoration: const BoxDecoration(),
+        color: const Color(0xffebc591),
         child: Stack(
           children: [
             body(),
@@ -110,7 +112,7 @@ mixin Base<Page extends BaseScreen> on BasePageState<Page> {
 
 import 'package:flutter/material.dart';
 
-class <ClassName> extends BasePage {
+class <ClassName> extends BaseScreen {
 const <ClassName>({super.key});
 @override
 <ClassName>State createState() => <ClassName>State();
