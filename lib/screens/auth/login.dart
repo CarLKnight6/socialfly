@@ -137,7 +137,7 @@ class LoginScreenState extends BasePageState<LoginScreen> with Base {
                   height: ScreenUtil.safeBlockVertical * 2,
                 ),
                 Text(
-                  "IF YOU DON'T HAVE AND ACCOUNT?",
+                  "IF YOU DON'T HAVE AN ACCOUNT?",
                   style: TextStyle(
                     fontFamily: 'Raleway',
                     fontSize: ScreenUtil.scaleFactor * 20,
